@@ -1,96 +1,283 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
+<head>
+	<title>Otti and Olli</title>
+	<meta name="viewport" content="width=device-width">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'> <!-- Used for the headings. font-family: 'Open Sans Condensed', sans-serif;--> 
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'> <!-- Used for paragraphs: 	font-family: 'Varela Round', sans-serif; -->
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'> <!-- Used for navigation. font-family: 'Poiret One', cursive; -->
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
+	<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/> <!-- slick plugin -->
+	<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>  <!-- slick plugin -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/columns.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="main-header">
+	
+		<!-- logo for desktops -->
+		<div class = "logocontainer"> 
+			<img class="leftflowers" src="images/leftflowerpng.png">
+			<img class="logotext" src="images/logotextpng.png">
+			<img class="rightflowers" src="images/rightflowerpng.png">
+		</div>
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Nicedw.GitHub-io by nicedw</title>
-  </head>
-
-  <body>
-    <a id="forkme_banner" href="https://github.com/nicedw/nicedw.github-io">View on GitHub</a>
-    <div class="shell">
-
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Nicedw.GitHub-io</h1>
-            <h2></h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
-
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/nicedw/nicedw.github-io/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/nicedw/nicedw.github-io/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
+		<!-- logo for mobile -->
+		<img class="mobilelogo" src="images/desktopsize.jpg">
 
 
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to a test GitHub Page v2.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
-
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
-
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating pages manually</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+		<div class="row">  <!-- Nick confirm: Every time we put in the row class any column classes will be placed starting from the left (at the specified column starting position) and added onto the right -->
+			<div class="column-12"> 
+				<ul class="main-nav">
+					<li><a href ="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT US</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="contact.html">CONTACT US</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
 
 
 
+		<div class="slider-container">
+			<h1 class="slider-text"> Caterer</h1>
+			<h1 class="slider-text">Offering beautiful cakes, cheese cakes, cupcakes, and all sweet & yummy treats for birthdays & special occasions.</h1> <!-- to do: put this on the background of the slider below i.e. move this to css-->
+
+			<div class="slider2">
+
+				<a href="https://developer.mozilla.org/"><img src="images/photo2.jpg" alt="" /></a>
+				<div> <img src="images/photo3.jpg" alt="" /> </div>
+	<!-- 			<div> <img src="images/photo4.jpg" alt="" /> </div> -->
+			<!-- 	<div> <img src="images/photo5.jpg" alt="" /> </div> -->
+			<!-- 	<div> <img src="images/photo6.jpg" alt="" /> </div> -->
+<!-- 				<div> <img src="images/photo7.jpg" alt="" /> </div> -->
+	<!-- 			<div> <img src="images/photo8.jpg" alt="" /> </div> -->
+	<!-- 			<div> <img src="images/photo9.jpg" alt="" /> </div> -->
+<!-- 				<div> <img src="images/photo10.jpg" alt="" /> </div> -->
+			</div>
+
+		</div>
+
+	
+	<div class="row">
+		<div class="column-7">
+			<h2>Primary Content</h2>
+			<img class="feat-img" src="http://lorempixel.com/400/300" />
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent iaculis sit amet ante dignissim elementum. Phasellus accumsan tellus non eros sagittis aliquet. Vivamus a lectus sem. Donec ut leo neque. Proin aliquet suscipit leo tincidunt pulvinar. Praesent massa metus, aliquam vitae congue quis, vestibulum ut leo. Aliquam</p>
+			<p>Cras laoreet quis tortor et laoreet. Nunc non enim vitae orci tempus maximus. Duis auctor imperdiet libero id mollis. Fusce et faucibus neque. Nulla facilisi. Vestibulum pulvinar</p>
+		</div>
+		<div class="column-5">
+			<h2>Secondary Content</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent iaculis sit amet ante dignissim elementum. Phasellus</p>
+			<hr>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent iaculis sit amet ante dignissim elementum. Phasellus</p>
+			<hr>
+			<p>neque. Proin aliquet suscipit leo tincidunt pulvinar. Praesent massa metus, aliquam vitae congue quis,</p>
+		</div>
+	</div>
 
 
-      </section>
+	<div class="main-banner">
+		<h1>Contact Us</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent iaculis sit</p>
+	</div>
 
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/nicedw">nicedw</a> can be found on <a href="https://github.com/nicedw/nicedw.github-io">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
 
-    </div>
 
-    
-  </body>
+
+
+
+
+			<div class="slider3"> <!-- this is the testimonial -->
+				<div> 
+					<img src="images/quotes.png"/>
+					<br> 
+					<h3> Otti & Olli made us an unforgettable wedding cake. It looked exquisite, tasted fantastic and was loved by all our guests. Everything they did for us went well beyond our expectations. Thanks Otti & Olli</h3>
+					<br>
+					<h4> - Jane and Nick, Auckland </h4>
+				</div>
+				<div> 
+					<img src="images/quotes.png"/>
+					<br> 
+					<h3> Over the years we have tried Ottis & Olli's cakes, cupcakes, deserts and various other scrumptious and beautifully made treats. We just can't stop ourselves from coming back for more! They have a fantastic friendly service - we definitely recommend them to all our friends.      </h3>
+					<br>
+					<h4> - Sheryl and John Edwards, Auckland </h4>
+				</div>
+	<!-- 			<div> <h3> We were delighted with the cupcakes </h3> </div>
+				<div> Slide  3 </div> -->
+			</div>
+
+
+
+
+
+
+
+
+
+
+<!-- **************************************************Gallery slider below -->
+<!-- 	<div class="row sliderbackground">
+		<div class="column-1">
+		</div>
+		<div class="column-10">
+			<div class="slider demo">
+				<a href="https://developer.mozilla.org/"><img src="images/image1.jpg" alt="" /></a>
+				<div> <img src="images/image2.jpg" alt="" /> </div>
+				<div> <img src="images/image3.jpg" alt="" /> </div>
+				<div> <img src="images/image4.jpg" alt="" /> </div>
+				<div> <img src="images/image5.jpg" alt="" /> </div>
+				<div> <img src="images/image6.jpg" alt="" /> </div>
+				<div> <img src="images/image7.jpg" alt="" /> </div>
+				<div> <img src="images/image8.jpg" alt="" /> </div>
+				<div> <img src="images/image9.jpg" alt="" /> </div>
+				<div> Slide  3 </div>
+			</div>
+		</div>	
+		<div class="column-1">
+		</div>
+	</div> -->
+<!-- **************************************************Gallery slider above -->
+
+<!-- Static Gallery *******************************************************************************-->
+
+
+	<div class="row">
+		<div class="column-1">
+		</div>
+		<div class="column-10 frontpagegallery">
+			<a href="gallery.html"><img src = "images/gallerybackground.jpg"></a>
+		</div>
+		<div class="column-1">
+		</div>
+	</div>
+
+
+
+
+	<footer class="main-footer">
+
+		<div class="row">
+			<div class="column-4">
+				<img src="images/logotextpng.png" width="160" height="70"/>
+				<p>Offering beautiful cakes, cheese cakes, cupcakes, and all sweet & yummy treats for birthdays & special occasions.</p>
+			</div>
+			<div class="column-4">
+				<h4>Contact Us</h4>
+				<p><a href="tel:021476611"><img src="images/phone.png" width="25" height="30" alt="" />  021 476 611 </p>
+				<p><a href="mailto:ottiandolli@gmail.com"><img src="images/envelopewhite.png" width="30" height="20" alt="" />  ottiandolli@gmail.com </p></a>
+			</div>
+			<div class="column-4">
+				<h4>Connect with Us</h4>
+				<a href="https://www.facebook.com/ottiandolli"><img src="images/facebook.png" width="45" height="45"></a>
+			</div>
+		</div>
+
+
+
+
+	
+	</footer>
+
+
+
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+	<!-- Slick plugin****************************************************************************************************-->
+	<script type="text/javascript" src="js/slick/slick.min.js"></script>
+	<script>  // we can add the script here instead of putting in main.js because it is only needed in the index page
+  		$('.slider').slick({
+
+	
+dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 2,
+  responsive: [
+    {
+      breakpoint: 1424,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+
+
+
+
+
+  		});
+	</script> 
+
+	<!--************************************* slick slider 2  - header banner ************************************************************-->
+
+
+<script>  // we can add the script here instead of putting in main.js because it is only needed in the index page
+  		$('.slider2').slick({
+  dots: false,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  autoplay: true,
+  autoplaySpeed: 3500,
+  cssEase: 'linear'
+
+
+
+
+
+  		});
+	</script> 
+
+
+	<!--************************************* slick slider 3  ************************************************************-->
+
+	<script>  // we can add the script here instead of putting in main.js because it is only needed in the index page
+  		$('.slider3').slick({
+		  dots: false,
+		  infinite: true,
+		  speed: 1000,
+		  fade: true,
+		  autoplay: true,
+		  autoplaySpeed: 2000,
+		  cssEase: 'linear'
+  		});
+	</script> 
+
+
+	<!-- Slick *********************************************************************************************************-->
+
+
+
+
+
+
+
+
+
+
+</body>
 </html>
