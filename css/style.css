@@ -1,5 +1,21 @@
 
 
+/*This section is to fix display issues with ios devices*/
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
+}
+/***************************************************************/
 
 /* Page Styles
 ================================ */
@@ -8,6 +24,16 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+
+
+
+
 body {
 	font: normal 1em/1.5 sans-serif;
 	color: #222;
@@ -245,8 +271,22 @@ position: relative;
 }
 
 
+/****************************************about us page***************************************/
+
+.aboutuscontent {
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
+
+
 /****************************************contact us page***************************************/
 	
+
+.contactdetails {
+	text-align: center;
+}
+
+
 #commentForm {
 	background-color:  lightblue;
 	border-radius: 10px;
@@ -255,6 +295,8 @@ position: relative;
 
 
 .contactformtitle {
+	margin-top: 50px;
+	margin-bottom: 50px;
 	text-align: center;
 }
 
@@ -298,7 +340,9 @@ input[type="text"], input[type="email"], input[type="alphaNum"],  textarea {
 	box-shadow: 0 1px 0 rgba(0,0,0,0.2);
 }
 
-
+.cmxform {
+	margin-top: 20px;
+}
 
 /*************************************************plugin *****************************************/
 .error{
