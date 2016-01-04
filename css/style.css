@@ -155,6 +155,7 @@ position: relative;
 }
 
 .slider-text{
+	
 	width: 100%;
 	text-align: center;
 	position: absolute;
@@ -266,7 +267,7 @@ position: relative;
 
 
 	.slider {
-		background-image: url("../images/sliderbackground.png");
+		background-image: url("../images/sliderbackground.jpg");
     	background-repeat: no-repeat;
     	background-size: 100% 100%;
 
