@@ -134,7 +134,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -45px;
+    bottom: -65px;   /*   nick modified*/
 
     display: block;
 
