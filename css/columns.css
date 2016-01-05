@@ -13,7 +13,7 @@
 /* Media Queries
 ================================ */
 
-@media (min-width: 1px) and (max-width: 768px)  {
+@media (min-width: 1px) and (max-width: 767px)  {
 	
 
 	.row>[class^="column-"]{  
@@ -24,7 +24,7 @@
 
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
 
 	/* Columns
