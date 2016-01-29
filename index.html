@@ -1,265 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Otti and Olli</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'> <!-- Used for the headings. font-family: 'Open Sans Condensed', sans-serif;--> 
-	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'> <!-- Used for paragraphs: 	font-family: 'Varela Round', sans-serif; -->
-	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'> <!-- Used for navigation. font-family: 'Poiret One', cursive; -->
-
-	<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/> <!-- slick plugin -->
-	<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>  <!-- slick plugin -->
+	<title>Cafe</title>
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/columns.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
-	
-		<!-- logo for desktops -->
-		<div class = "logocontainer"> 
-			<img class="leftflowers" src="images/leftflowerpng.png">
-			<img class="logotext" src="images/logotextpng.png">
-			<img class="rightflowers" src="images/rightflowerpng.png">
-		</div>
-
-		<!-- logo for mobile -->
-		<img class="mobilelogo" src="images/desktopsize.jpg">
-
-
-		<div class="row">  <!-- Nick confirm: Every time we put in the row class any column classes will be placed starting from the left (at the specified column starting position) and added onto the right -->
-			<div class="column-12"> 
-				<ul class="main-nav">
-					<li><a href ="index.html">HOME</a></li>
-					<li><a href="about.html">ABOUT US</a></li>
-					<li><a href="gallery.html">GALLERY</a></li>
-					<li><a href="contact.html">CONTACT US</a></li>
-				</ul>
-			</div>
-		</div>
 	</header>
 
 
 
+	<!-- This is the hidden form that will get submitted to formspree -->
+	<form id = "submitform" action="//formspree.io/nicedw@hotmail.com"
+	      method="POST" style="display:none"> 
+	    <input type="text" name="usersname">
+	 	<input type="checkbox" id="latte" name="latte" value="latte"> 
+	 	<label for="latte">Latte</label><br>
+	 	<input type="checkbox" id="cappuccino" name="cappuccino" value="cappuccino">
+	 	<label for="cappuccino">Cappuccino</label><br>
+		<input type="checkbox" id="greentea" name="greentea" value="greentea">
+		<label for="greentea">Green Tea</label><br>
 
-		<div class="slider-container">
-			<h1 class="slider-text">Offering beautiful cakes, cheese cakes, cupcakes, and all sweet & yummy treats for birthdays & special occasions.</h1> 
+	    <label for="food">Food</label>
+	    <input type="text" id="food" name="food">
 
-			<div class="slider2">
+	    <label for="comments">Comments</label>
+	    <input type="text" id="comments" name="comments">
+		<input type="hidden" name="_next" value="//nicedw.github.io/nicedw.github-io/thanks.html" />
+	    <input type="submit" value="Send">
+	</form>
 
-				<div> <img src="images/headerbg1.jpg" alt="" /> </div>
-				<div> <img src="images/headerbg2.jpg" alt="" /> </div>
-	<!-- 			<div> <img src="images/photo4.jpg" alt="" /> </div> -->
-			<!-- 	<div> <img src="images/photo5.jpg" alt="" /> </div> -->
-			<!-- 	<div> <img src="images/photo6.jpg" alt="" /> </div> -->
-<!-- 				<div> <img src="images/photo7.jpg" alt="" /> </div> -->
-	<!-- 			<div> <img src="images/photo8.jpg" alt="" /> </div> -->
-	<!-- 			<div> <img src="images/photo9.jpg" alt="" /> </div> -->
-<!-- 				<div> <img src="images/photo10.jpg" alt="" /> </div> -->
-			</div>
 
-		</div>
-
-	
-
-	<div class="main-banner">
-		<a href="contact.html"><h1 class="contactbtn">CONTACT US</h1></a>
-		<p>Get in touch with us if you have any orders or enquiries</p>
+	<div class= "box" id="page0" >
+		<h2> Login </h2>
+		<label> Name </label>
+	    <input type="text" name="usernameinput">
+		<button id="page0copy"> Next </button>
 	</div>
 
 
 
+	<div class= "box" id="page1" style="display:none">
+		<h1>Drink Orders </h1>
+	    <br>	
+	  	<h2> Please select your drink:</h2> <br>
+	    <input type="checkbox" id="userlatte" name="userlatte" value="userlatte">  <!-- i've made all of these the same !!!!! -->
+	    <label for="userlatte">Latte</label><br>  <!-- does it need a value????????????????????? -->
+	    
+	    <input type="checkbox" id="usercappuccino" name="usercappuccino" value="usercappuccino">
+	 	<label for="usercappuccino">Cappuccino</label><br>  <!-- does it need a value????????????????????? -->
 
+	 	<input type="checkbox" id="usergreentea" name="usergreentea" value="usergreentea">
+	 	<label for="usergreentea">Green Tea</label><br>  <!-- does it need a value????????????????????? -->
 
+		<button id="page1copy"> Next </button>
 
-
-			<div class="slider3"> <!-- this is the testimonial -->
-				<div> 
-					<img src="images/quotes.png"/>
-					<br> 
-					<h3> Otti & Olli made us an unforgettable wedding cake. It looked exquisite, tasted fantastic and was loved by all our guests. Everything they did for us went well beyond our expectations. Thanks Otti & Olli</h3>
-					<br>
-					<h4> - Jane and Nick, Auckland </h4>
-				</div>
-				<div> 
-					<img src="images/quotes.png"/>
-					<br> 
-					<h3> Over the years we have tried Ottis & Olli's cakes, cupcakes, deserts and various other scrumptious and beautifully made treats. We just can't stop ourselves from coming back for more! They have a fantastic friendly service - we definitely recommend them to all our friends.      </h3>
-					<br>
-					<h4> - Sheryl and John Edwards, Auckland </h4>
-				</div>
-	<!-- 			<div> <h3> We were delighted with the cupcakes </h3> </div>
-				<div> Slide  3 </div> -->
-			</div>
-
-
-
-
-
-
-
-
-
-
-<!-- **************************************************Gallery slider below -->
-<!-- 	<div class="row sliderbackground">
-		<div class="column-1">
-		</div>
-		<div class="column-10">
-			<div class="slider demo">
-				<a href="https://developer.mozilla.org/"><img src="images/image1.jpg" alt="" /></a>
-				<div> <img src="images/image2.jpg" alt="" /> </div>
-				<div> <img src="images/image3.jpg" alt="" /> </div>
-				<div> <img src="images/image4.jpg" alt="" /> </div>
-				<div> <img src="images/image5.jpg" alt="" /> </div>
-				<div> <img src="images/image6.jpg" alt="" /> </div>
-				<div> <img src="images/image7.jpg" alt="" /> </div>
-				<div> <img src="images/image8.jpg" alt="" /> </div>
-				<div> <img src="images/image9.jpg" alt="" /> </div>
-				<div> Slide  3 </div>
-			</div>
-		</div>	
-		<div class="column-1">
-		</div>
-	</div> -->
-<!-- **************************************************Gallery slider above -->
-
-<!-- Static Gallery *******************************************************************************-->
-
-
-	<div class="row">
-		<div class="column-1">
-		</div>
-		<div class="column-10 frontpagegallery">
-			<a href="gallery.html"><img src = "images/gallerybackground.jpg"></a>
-		</div>
-		<div class="column-1">
-		</div>
 	</div>
 
 
+<div class= "box" id="page2" style="display:none"> <!-- Page 2 should initally be hidden. I've put the display none here instead of in css because it prevents it from being momentarily visable when the page loads -->
+	<h1>Food Orders </h1>
+    <label> Request </label>
 
+    <label for="userfood">Food</label>
+    <input type="text" id="userfood" name="userfood">
 
-	<footer class="main-footer">
+    <label for="usercomments">Comments</label>
+    <input type="text" id="usercomments" name="usercomments">
 
-		<div class="row">
-			<div class="column-4">
-				<img src="images/logotextpng.png" width="180" height="70"/>
-				<p>Offering beautiful cakes, cheese cakes, cupcakes, and all sweet & yummy treats for birthdays & special occasions.</p>
-			</div>
-			<div class="column-4">
-				<h4>Contact Us</h4>
-				<p><a href="tel:021476611"><img src="images/phone.png" width="25" height="30" alt="" /> 021 476 611 </p>
-				<p><a href="mailto:ottiandolli@gmail.com"><img src="images/envelopewhite.png" width="30" height="20" alt="" />  ottiandolli@gmail.com </p></a>
-			</div>
-			<div class="column-4">
-				<h4>Connect with Us</h4>
-				<a href="https://www.facebook.com/ottiandolli"><img src="images/facebook.png" width="45" height="45"></a>
-			</div>
-		</div>
+	<button id="finishbutton"> Finish </button>
+
+</div>
 
 
 
 
-	
-	</footer>
+
+
+
+
 
 
 
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-
-	<!-- Slick plugin****************************************************************************************************-->
-	<script type="text/javascript" src="js/slick/slick.min.js"></script>
-	<script>  // we can add the script here instead of putting in main.js because it is only needed in the index page
-  		$('.slider').slick({
-
-	
-dots: true,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 2,
-  responsive: [
-    {
-      breakpoint: 1424,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 2,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 1000,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-
-
-
-
-
-  		});
-	</script> 
-
-	<!--************************************* slick slider 2  - header banner ************************************************************-->
-
-
-<script>  // we can add the script here instead of putting in main.js because it is only needed in the index page
-  		$('.slider2').slick({
-  dots: false,
-  infinite: true,
-  speed: 500,
-  fade: true,
-  autoplay: true,
-  autoplaySpeed: 3500,
-  cssEase: 'linear'
-
-
-
-
-
-  		});
-	</script> 
-
-
-	<!--************************************* slick slider 3  ************************************************************-->
-
-	<script>  // we can add the script here instead of putting in main.js because it is only needed in the index page
-  		$('.slider3').slick({
-		  dots: false,
-		  infinite: true,
-		  speed: 1000,
-		  fade: true,
-		  autoplay: true,
-		  autoplaySpeed: 7000,
-		  cssEase: 'linear'
-  		});
-	</script> 
-
-
-	<!-- Slick *********************************************************************************************************-->
-
-
-
-
-
-
-
-
+	<script src="js/app.js"></script>
 
 
 </body>
