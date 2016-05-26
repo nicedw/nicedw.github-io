@@ -1,107 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-	<title>Cafe</title>
-	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery survey.js Demo</title>
+<link href="css/stylesheet.css" type="text/css" rel="stylesheet">
+<!-- <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css"> -->
 </head>
+
 <body>
-	<header class="main-header">
-	</header>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<!-- <li><a href="http://www.jqueryscript.net/other/Create-A-Simple-Survey-using-jQuery-JSON-survey-js.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li> -->
+</ul>
+<div class="jquery-script-ads">
 
 
-
-	<!-- This is the hidden form that will get submitted to formspree -->
-	<form id = "submitform" action="//formspree.io/nicedw@hotmail.com"
-	      method="POST" style="display:none"> 
-	    <input type="text" name="usersname">
-	 	<input type="checkbox" id="latte" name="latte" value="latte"> 
-	 	<label for="latte">Latte</label><br>
-	 	<input type="checkbox" id="cappuccino" name="cappuccino" value="cappuccino">
-	 	<label for="cappuccino">Cappuccino</label><br>
-		<input type="checkbox" id="greentea" name="greentea" value="greentea">
-		<label for="greentea">Green Tea</label><br>
-		<input type="checkbox" id="tea" name="tea" value="tea">
-	 	<label for="tea">Tea</label><br>  <!-- does it need a value????????????????????? -->
-
-	    <input type="checkbox" id="flat" name="flat" value="flat">
-	 	<label for="flat">Flat White</label><br>  <!-- does it need a value????????????????????? -->
-
-
-	    <label for="food">Food</label>
-	    <input type="text" id="food" name="food">
-
-	    <label for="comments">Comments</label>
-	    <input type="text" id="comments" name="comments">
-		<input type="hidden" name="_next" value="//nicedw.github.io/nicedw.github-io/thanks.html" />
-	    <input type="submit" value="Send">
-	</form>
-
-
-	<div class= "box" id="page0" >
-		<h2> Login </h2>
-		<label> Name </label>
-	    <input type="text" name="usernameinput">
-	    <br>
-		<button id="page0copy"> Next </button>
-	</div>
-
-
-
-	<div class= "box" id="page1" style="display:none">
-		<h1>Drink Orders </h1>
-	    <br>	
-	  	<h2> Please select your drink:</h2> <br>
-	    <input type="checkbox" id="userlatte" name="userlatte" value="userlatte">  <!-- i've made all of these the same !!!!! -->
-	    <label for="userlatte">Latte</label><br>  <!-- does it need a value????????????????????? -->
-	    
-	    <input type="checkbox" id="usercappuccino" name="usercappuccino" value="usercappuccino">
-	 	<label for="usercappuccino">Cappuccino</label><br>  <!-- does it need a value????????????????????? -->
-
-	    <input type="checkbox" id="userflat" name="userflat" value="userflat">
-	 	<label for="userflat">Flat White</label><br>  <!-- does it need a value????????????????????? -->
-
-	 	<input type="checkbox" id="usergreentea" name="usergreentea" value="usergreentea">
-	 	<label for="usergreentea">Green Tea</label><br>  <!-- does it need a value????????????????????? -->
-
-	 	<input type="checkbox" id="usertea" name="usertea" value="usertea">
-	 	<label for="usertea">Tea</label><br>  <!-- does it need a value????????????????????? -->
-
-
-
-
-		<button id="page1copy"> Next </button>
-
-	</div>
-
-
-<div class= "box" id="page2" style="display:none"> <!-- Page 2 should initally be hidden. I've put the display none here instead of in css because it prevents it from being momentarily visable when the page loads -->
-	<h1>Food Orders </h1>
-    <label for="userfood">Food/Snack Requests:</label>
-    <input type="text" id="userfood" name="userfood">
-    <br>
-    <label for="usercomments">Additional Comments:</label>
-    <input type="text" id="usercomments" name="usercomments">
-    <br>
-
-	<button id="finishbutton"> Finish </button>
-
+<div class="jquery-script-clear"></div>
 </div>
+</div>
+<div class="wrapper">
+<div class="main">
+
+<div><h1 class="title">jQuery survey.js Demo</h1><br>
+
+<div class="question-container"></div>
+<a id="backBtn" href="#" class="button">« Back</a>
+<a id="nextBtn" href="#" class="button">Continue »</a>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="survey.js" type="text/javascript"></script>
+
+</div><div class="completed-message"></div>
+</div></div>
 
 
-
-
-
-
-
-
-
-
-
-	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="js/app.js"></script>
-
+<div class="footer"></div>
+</div>
 
 </body>
 </html>
