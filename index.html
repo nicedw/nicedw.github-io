@@ -1,92 +1,107 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Winery</title>
-<meta charset="utf-8" />
-<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
-<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.0.3/jquery.min.js"></script> -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- <script type="text/javascript" src="js/jquery-2.2.4.js"></script>  -->
-
-<!-- <script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script> -->
-
-
-<script type="text/javascript" src="js/jquery.shop.js"></script>
+	<title>Cafe</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-<div id="site">
-	<header id="masthead">
-		<h1>Winery <span class="tagline">Wines for web developers since 1999</h1>
+	<header class="main-header">
 	</header>
-	<div id="content">
-		<div id="products">
-			<ul>
-				<li>
-					<div class="product-image">
-						<img src="images/wine1.jpg" alt="" />
-					</div>
-					<div class="product-description" data-name="Wine #1" data-price="5">
-						<h3 class="product-name">Wine #1</h3>
-						<p class="product-price">&euro; 5</p>
-						<form class="add-to-cart" action="cart.html" method="post">
-							<div>
-								<label for="qty-1">Quantity</label>
-								<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
-							</div>
-							<p><input type="submit" value="Add to cart" class="btn" /></p>
-						</form>
-					</div>
-				</li>
-				
-				<li>
-					<div class="product-image">
-						<img src="images/wine2.jpg" alt="" />
-					</div>
-					<div class="product-description" data-name="Wine #2" data-price="8">
-						<h3 class="product-name">Wine #2</h3>
-						<p class="product-price">&euro; 8</p>
-						<form class="add-to-cart" action="cart.html" method="post">
-							<div>
-								<label for="qty-2">Quantity</label>
-								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
-							</div>
-							<p><input type="submit" value="Add to cart" class="btn" /></p>
-						</form>
-					</div>
-				</li>
-				
-				<li>
-					<div class="product-image">
-						<img src="images/wine3.jpg" alt="" />
-					</div>
-					<div class="product-description" data-name="Wine #3" data-price="11">
-						<h3 class="product-name">Wine #3</h3>
-						<p class="product-price">&euro; 11</p>
-						<form class="add-to-cart" action="cart.html" method="post">
-							<div>
-								<label for="qty-3">Quantity</label>
-								<input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
-							</div>
-							<p><input type="submit" value="Add to cart" class="btn" /></p>
-						</form>
-					</div>
-				</li>
 
 
-				
-			</ul>
-		</div>
+
+	<!-- This is the hidden form that will get submitted to formspree -->
+	<form id = "submitform" action="//formspree.io/nicedw@hotmail.com"
+	      method="POST" style="display:none"> 
+	    <input type="text" name="usersname">
+	 	<input type="checkbox" id="latte" name="latte" value="latte"> 
+	 	<label for="latte">Latte</label><br>
+	 	<input type="checkbox" id="cappuccino" name="cappuccino" value="cappuccino">
+	 	<label for="cappuccino">Cappuccino</label><br>
+		<input type="checkbox" id="greentea" name="greentea" value="greentea">
+		<label for="greentea">Green Tea</label><br>
+		<input type="checkbox" id="tea" name="tea" value="tea">
+	 	<label for="tea">Tea</label><br>  <!-- does it need a value????????????????????? -->
+
+	    <input type="checkbox" id="flat" name="flat" value="flat">
+	 	<label for="flat">Flat White</label><br>  <!-- does it need a value????????????????????? -->
+
+
+	    <label for="food">Food</label>
+	    <input type="text" id="food" name="food">
+
+	    <label for="comments">Comments</label>
+	    <input type="text" id="comments" name="comments">
+		<input type="hidden" name="_next" value="//nicedw.github.io/nicedw.github-io/thanks.html" />
+	    <input type="submit" value="Send">
+	</form>
+
+
+	<div class= "box" id="page0" >
+		<h2> Login </h2>
+		<label> Name </label>
+	    <input type="text" name="usernameinput">
+	    <br>
+		<button id="page0copy"> Next </button>
 	</div>
-	
-	
+
+
+
+	<div class= "box" id="page1" style="display:none">
+		<h1>Drink Orders </h1>
+	    <br>	
+	  	<h2> Please select your drink:</h2> <br>
+	    <input type="checkbox" id="userlatte" name="userlatte" value="userlatte">  <!-- i've made all of these the same !!!!! -->
+	    <label for="userlatte">Latte</label><br>  <!-- does it need a value????????????????????? -->
+	    
+	    <input type="checkbox" id="usercappuccino" name="usercappuccino" value="usercappuccino">
+	 	<label for="usercappuccino">Cappuccino</label><br>  <!-- does it need a value????????????????????? -->
+
+	    <input type="checkbox" id="userflat" name="userflat" value="userflat">
+	 	<label for="userflat">Flat White</label><br>  <!-- does it need a value????????????????????? -->
+
+	 	<input type="checkbox" id="usergreentea" name="usergreentea" value="usergreentea">
+	 	<label for="usergreentea">Green Tea</label><br>  <!-- does it need a value????????????????????? -->
+
+	 	<input type="checkbox" id="usertea" name="usertea" value="usertea">
+	 	<label for="usertea">Tea</label><br>  <!-- does it need a value????????????????????? -->
+
+
+
+
+		<button id="page1copy"> Next </button>
+
+	</div>
+
+
+<div class= "box" id="page2" style="display:none"> <!-- Page 2 should initally be hidden. I've put the display none here instead of in css because it prevents it from being momentarily visable when the page loads -->
+	<h1>Food Orders </h1>
+    <label for="userfood">Food/Snack Requests:</label>
+    <input type="text" id="userfood" name="userfood">
+    <br>
+    <label for="usercomments">Additional Comments:</label>
+    <input type="text" id="usercomments" name="usercomments">
+    <br>
+
+	<button id="finishbutton"> Finish </button>
 
 </div>
 
-<footer id="site-info">
-		Copyright &copy; Winery
-	</footer>
+
+
+
+
+
+
+
+
+
+
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/app.js"></script>
+
 
 </body>
-</html>	
+</html>
