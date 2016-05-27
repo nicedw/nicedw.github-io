@@ -1,44 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>jQuery survey.js Demo</title>
-<link href="css/stylesheet.css" type="text/css" rel="stylesheet">
-<!-- <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css"> -->
+<title>Winery</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.0.3/jquery.min.js"></script> -->
+<script type="text/javascript" src="js/jquery-2.2.4.js"></script> 
+<script type="text/javascript" src="js/jquery.shop.js"></script>
 </head>
 
 <body>
-<div id="jquery-script-menu">
-<div class="jquery-script-center">
-<ul>
-<!-- <li><a href="http://www.jqueryscript.net/other/Create-A-Simple-Survey-using-jQuery-JSON-survey-js.html">Download This Plugin</a></li>
-<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li> -->
-</ul>
-<div class="jquery-script-ads">
+
+<div id="site">
+	<header id="masthead">
+		<h1>Winery <span class="tagline">Wines for web developers since 1999</h1>
+	</header>
+	<div id="content">
+		<div id="products">
+			<ul>
+				<li>
+					<div class="product-image">
+						<img src="images/wine1.jpg" alt="" />
+					</div>
+					<div class="product-description" data-name="Wine #1" data-price="5">
+						<h3 class="product-name">Wine #1</h3>
+						<p class="product-price">&euro; 5</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-1">Quantity</label>
+								<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+					</div>
+				</li>
+				
+				<li>
+					<div class="product-image">
+						<img src="images/wine2.jpg" alt="" />
+					</div>
+					<div class="product-description" data-name="Wine #2" data-price="8">
+						<h3 class="product-name">Wine #2</h3>
+						<p class="product-price">&euro; 8</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-2">Quantity</label>
+								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+					</div>
+				</li>
+				
+				<li>
+					<div class="product-image">
+						<img src="images/wine3.jpg" alt="" />
+					</div>
+					<div class="product-description" data-name="Wine #3" data-price="11">
+						<h3 class="product-name">Wine #3</h3>
+						<p class="product-price">&euro; 11</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-3">Quantity</label>
+								<input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+					</div>
+				</li>
 
 
-<div class="jquery-script-clear"></div>
+				
+			</ul>
+		</div>
+	</div>
+	
+	
+
 </div>
-</div>
-<div class="wrapper">
-<div class="main">
 
-<div><h1 class="title">jQuery survey.js Demo</h1><br>
-
-<div class="question-container"></div>
-<a id="backBtn" href="#" class="button">« Back</a>
-<a id="nextBtn" href="#" class="button">Continue »</a>
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="survey.js" type="text/javascript"></script>
-
-</div><div class="completed-message"></div>
-</div></div>
-
-
-<div class="footer"></div>
-</div>
+<footer id="site-info">
+		Copyright &copy; Winery
+	</footer>
 
 </body>
-</html>
+</html>	
